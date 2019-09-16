@@ -1,0 +1,15 @@
+1. visual studio 2019를 실행합니다.
+2. MFC로 파일을 생성합니다.
+3. calc123으로 파일을 생성하여 Dialog에서 calc123.rc를 만듭니다.
+4. Button하나와 Edit Control 3개를 추가하여 Button에 +를 입력해줍니다.
+5. Button을 더블클릭하여 코드를 들어갑니다.
+6.
+{ 
+int a = GetDlgItemint(IDC_EDIT1);
+int b = GetDlgItemint(IDC_EDIT1);
+int c = a+b;
+SetDlgItemint(IDC_EDIT3);
+}
+을 입력해줍니다.
+7. F5를 눌러서 디버그 실행을 해줍니다.
+8. 숫자 입력 후 더하기가 되는 지 확인해줍니다.

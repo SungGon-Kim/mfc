@@ -1,0 +1,17 @@
+1) Visual studio를 실행합니다.
+2) 새 프로젝트를 만듭니다.
+3) MFC 앱을 실행시킵니다.
+4) 프로젝트 이름을 정해준 후 여러문서에서 대화상자 기반으로 바꿔주고 마칩니다.
+5) 오른쪽 솔루션 탐색기에서 리소스 파일을 실행합니다.
+6) pen.rc를 들어가서 Dialog를 들어간 후 IDD_pen_DIALOG를 실행합니다.
+7) WM_MOUSEMOVE를 클릭하고 OnMouseMove를 클릭합니다.
+8) 161번째 줄에 if(nFlags == MK_LBUTTON){
+		CClientDC dc(this);
+		CPen pen(PS_SOLID, 16, RGB(0,255,0));
+		dc.SelectObject(&pen);
+		dc.MoveTo(pnt);
+		dc.LineTo(point);
+	}
+	pnt = point;
+	CDialogEx::OnMouseMove(nFlags,point); 를 입력해줍니다.
+9) F5를 누르고 마우스 왼쪽버튼을 누르면서 움직이면 펜이 완성됩니다.
